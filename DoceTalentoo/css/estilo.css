@@ -1,0 +1,248 @@
+/* Asterisco = seletor universal, representa todos 
+os elementos serão afetados */
+
+
+* {
+	
+/* 
+margin: valor1 - as quatro margens terão valor1.
+margin: valor1 valor2 - margem superior e inferior terão valor1 - margem direita e esquerda terão valor2
+margin: valor1 valor2 valor3 - margem superior terá valor1 - margem direita e esquerda terão valor2 - margem inferior terá valor3.
+margin: valor1 valor2 valor3 valor4 - margens superior, direita, inferior e esquerda nesta ordem.
+	
+	
+	
+*/	
+    
+	margin: 3px 4px 2px 3px;
+	
+
+}
+
+
+body{
+  background:#F0FFFF;
+  
+}
+
+footer{
+
+    background: #025252;
+    color: white;
+}
+
+#banner	 {
+/*   width  = largura  
+     height = altura */   
+
+/*margin-bottom = define a margem inferior de uma elemento
+coloca valor mais longe de outros elementos visinhos, enquanto
+um valor negativo, aproxima.
+*/	 
+
+/* border-radius = definir bordas arredondadas.*/
+
+    width: 100%;
+	height: 400px;
+	margin-bottom: 30px;
+	border-radius: 12px; 
+	
+    }
+
+
+
+ 
+/*   
+p {
+
+    
+     font-family: Courier;
+     color: red;
+     font-size: 22px;
+ }
+
+*/
+
+
+/*Abaixo formatação texto da página index*/
+
+
+#bem_vindo{
+     font-family: Courier;
+	 color: green;
+     font-size: 22px;
+	 
+ } 
+
+#nota{
+     font-family: Courier;
+	 color: red;
+     font-size: 22px;
+	 
+ } 
+ 
+ #conselho{
+	 
+	 font-family: Courier;
+     color: blue;
+     font-size: 20px;
+	
+ } 
+ 
+ 
+/*Abaixo CSS do menu horizontal */
+
+
+
+ul.menu{
+  
+    background-color: rgb(37, 37, 39);
+	display: flex;
+	list-style: none;
+	padding: 0;
+	width:100%;	  
+}
+
+ul.menu li.menu-item {
+    position: relative; /* Permite posicionar os submenus corretamente */
+    margin-right: 10px; /* Define o espaçamento entre os itens do menu */
+    padding: 0;
+}
+
+/* Estilização para os links dos itens do menu principal */
+ul.menu li a {
+    color: white; /* Define a cor do texto do menu principal */
+    padding: 10px; /* Define o espaçamento interno */
+    text-decoration: none; /* Remove a decoração de texto */
+    display: block; /* Faz com que o link ocupe a largura total do item do menu */
+}
+
+/* Define o estilo dos submenus e oculta-os inicialmente */
+ul.menu li.submenu {
+    display: none; /* Esconde os submenus por padrão */
+    position: absolute; /* Permite posicionar os submenus de forma absoluta */
+    background-color: rgb(228, 223, 224); /* Define a cor de fundo dos submenus */
+    width: 200px; /* Define a largura dos submenus */
+    padding: 0; /* Define o espaçamento interno dos submenus */
+    list-style: none; /* Remove os marcadores de lista */
+    top: 90%; /* Posiciona o submenu abaixo do item do menu principal */
+    left: 0; /* Alinha o submenu com o lado esquerdo do item do menu principal */
+    z-index: 2; /* Define a ordem de empilhamento, acima do conteúdo */
+}
+
+/* Mostra o submenu quando o item do menu principal é hoverado */
+ul.menu li.menu-item:hover > .submenu {
+    display: block; /* Exibe o submenu ao passar o mouse no item do menu principal */
+}
+
+/* Estilização para os itens dentro dos submenus */
+ul.submenu li {
+    display: block; /* Exibe os itens dos submenus como blocos */
+}
+
+/* Estilização para os links dentro dos submenus */
+ul.submenu li a {
+    color: white; /* Define a cor do texto dos submenus */
+    text-decoration: none; /* Remove a decoração de texto */
+}
+
+
+#calendar{
+	font-family: Arial, sans-serif;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 300px;
+}
+
+.header{
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: #585656;
+}
+
+nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(37,37,39);
+    border: 1px solid #a39999;
+    box-shadow: 0 2px 4px rgba(206, 169, 169, 0.1);
+}
+
+nav .submenu li {
+    padding: 10px;
+}
+
+nav .submenu li:hover {
+    background-color: #585656;
+}
+
+.image-container {
+    display: inline-block;
+    margin: 10px;
+}
+
+.image-caption {
+    text-align: center;
+}
+
+.image-inline-block {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Estilo para as imagens */
+.image-block img {
+    width: 50%; /* Todas as imagens terão o mesmo tamanho */
+    max-width: 150px; /* Defina o tamanho máximo desejado */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centraliza horizontalmente a imagem */
+}
+/* Estilo para o texto abaixo das imagens */
+
+header h1, nav {
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+body {
+    font-family: 'EB Garamond';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+}
+
+.imagem-principal { /*Define opacidade da imagem principal, não está sendo utilizado a class pois o resultado sem definir opacidade ficou melhor*/
+    position: inherit;
+    opacity: 0.5;
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 60%; /* Ajuste conforme necessário para a posição vertical */
+    left: 50%; /* Ajuste conforme necessário para a posição horizontal */
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: white; /* Cor do texto */
+}
